@@ -37,7 +37,7 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - Base macOS headless setup
 - Homebrew bootstrap and package validation
 - OrbStack first-launch/runbook
-- Native Ollama
+- Native Ollama service, model management, and validation
 - Open WebUI + Jellyfin compose stack
 
 See `TODO.md` for the full plan.

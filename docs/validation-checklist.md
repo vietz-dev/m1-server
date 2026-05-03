@@ -33,7 +33,7 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 ## Ollama
 - [ ] `scripts/check-ollama.sh` reports the service as reachable
 - [ ] remote LAN access to port `11434` works if intentionally exposed
-- [ ] a smoke test prompt succeeds
+- [ ] `scripts/ollama-smoke-test.sh` succeeds
 - [ ] logs or runtime output indicate Metal acceleration is active
 
 ## Open WebUI
