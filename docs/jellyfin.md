@@ -30,13 +30,13 @@ See `docs/media-storage.md` for the storage plan.
 
 ## Deployment and checks
 Deploy with:
-```bash
-./scripts/deploy-jellyfin.sh
+```fish
+./scripts/deploy-jellyfin.fish
 ```
 
 Validate with:
-```bash
-./scripts/check-jellyfin.sh
+```fish
+./scripts/check-jellyfin.fish
 ```
 
 ## Validation goals

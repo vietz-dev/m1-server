@@ -20,8 +20,8 @@ Use this skill to verify that the MacBook Air M1 can run reliably without its in
 - `docs/validation-checklist.md`
 - `runbooks/power-management.md`
 - `runbooks/headless-operation.md` when present
-- `scripts/check-remote-access.sh`
-- `scripts/check-pmset.sh`
+- `scripts/check-remote-access.fish`
+- `scripts/check-pmset.fish`
 
 ## Workflow
 1. Review the intended headless behavior in docs.

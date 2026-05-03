@@ -15,14 +15,14 @@ Prevent the Mac from sleeping during normal server operation while on AC power.
 
 ## Apply
 Use:
-```bash
-sudo ./scripts/configure-pmset.sh
+```fish
+sudo ./scripts/configure-pmset.fish
 ```
 
 ## Validate
 Use:
-```bash
-./scripts/check-pmset.sh
+```fish
+./scripts/check-pmset.fish
 ```
 
 Then perform a manual check:
@@ -32,7 +32,7 @@ Then perform a manual check:
 
 ## Rollback
 Restore previous settings manually with `pmset` if the new policy causes unwanted behavior, then rerun:
-```bash
+```fish
 pmset -g custom
 ```
 and document the final chosen settings in this runbook.

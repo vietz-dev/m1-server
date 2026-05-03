@@ -4,8 +4,8 @@
 Deploy Open WebUI in OrbStack and connect it to the native Ollama API.
 
 ## Prerequisites
-- OrbStack is installed and validated with `./scripts/check-orbstack.sh`
-- Ollama is installed and validated with `./scripts/check-ollama.sh`
+- OrbStack is installed and validated with `./scripts/check-orbstack.fish`
+- Ollama is installed and validated with `./scripts/check-ollama.fish`
 - `compose/.env` exists and is based on `compose/.env.example`
 
 ## Required config
@@ -18,8 +18,8 @@ OPEN_WEBUI_SECRET_KEY=<set-a-real-secret>
 
 ## Deploy
 Run:
-```bash
-./scripts/deploy-open-webui.sh
+```fish
+./scripts/deploy-open-webui.fish
 ```
 
 ## Admin bootstrap
@@ -31,8 +31,8 @@ Run:
 
 ## Validate
 Run:
-```bash
-./scripts/check-open-webui.sh
+```fish
+./scripts/check-open-webui.fish
 ```
 
 Then confirm manually:
@@ -49,7 +49,7 @@ Capture at minimum:
 
 ## Rollback
 - stop or remove the service:
-  ```bash
+  ```fish
   docker compose --env-file compose/.env -f compose/docker-compose.yml stop open-webui
   docker compose --env-file compose/.env -f compose/docker-compose.yml rm -f open-webui
   ```
@@ -59,6 +59,6 @@ Capture at minimum:
 ## Related files
 - `compose/docker-compose.yml`
 - `compose/.env.example`
-- `scripts/deploy-open-webui.sh`
-- `scripts/check-open-webui.sh`
+- `scripts/deploy-open-webui.fish`
+- `scripts/check-open-webui.fish`
 - `docs/containers.md`

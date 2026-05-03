@@ -7,6 +7,7 @@
 - `htop` – quick process visibility
 - `ripgrep` – fast log and repo search
 - `tmux` – resilient remote shell sessions
+- `fish` – preferred interactive shell and script shell for this repo
 - `ollama` – native Apple Silicon LLM runtime
 - `orbstack` – container runtime for Open WebUI and Jellyfin
 

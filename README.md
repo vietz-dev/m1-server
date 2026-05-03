@@ -32,6 +32,7 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - Machine-specific config template: `config/machine.env.example`
 - Compose config template: `compose/.env.example`
 - Baseline package decisions: `docs/tooling.md`
+- Fish shell setup: `runbooks/fish-shell.md`
 
 ## Current focus
 - Base macOS headless setup

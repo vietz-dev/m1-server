@@ -5,19 +5,19 @@ Restore Docker/OrbStack when container workloads are down.
 
 ## Steps
 1. Run:
-   ```bash
-   ./scripts/check-orbstack.sh
+   ```fish
+   ./scripts/check-orbstack.fish
    ```
 2. If the Docker context is not `orbstack`, switch back if appropriate.
 3. If the app is installed but daemon is unavailable, launch OrbStack via GUI or Screen Sharing.
 4. Once OrbStack is healthy, validate the compose file:
-   ```bash
+   ```fish
    docker compose -f compose/docker-compose.yml config
    ```
 5. Restart affected services:
-   ```bash
-   ./scripts/deploy-open-webui.sh
-   ./scripts/deploy-jellyfin.sh
+   ```fish
+   ./scripts/deploy-open-webui.fish
+   ./scripts/deploy-jellyfin.fish
    ```
 
 ## Common causes

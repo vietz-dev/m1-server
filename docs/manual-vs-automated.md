@@ -27,8 +27,8 @@ Automate everything practical, but document every remaining manual step as a run
 - Always add a validation step so the operator can confirm the result.
 
 ## Common examples in this repo
-- SSH checks: automate with `scripts/check-remote-access.sh`
-- power policy checks: automate with `scripts/check-pmset.sh`
+- SSH checks: automate with `scripts/check-remote-access.fish`
+- power policy checks: automate with `scripts/check-pmset.fish`
 - OrbStack first launch: document in `runbooks/orbstack-first-launch.md`
 - router DHCP reservation: document in a runbook and summarize the resulting IP in `docs/networking.md`
 

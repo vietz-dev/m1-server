@@ -4,7 +4,7 @@
 Deploy Jellyfin in OrbStack and serve media from a documented host media path.
 
 ## Prerequisites
-- OrbStack is installed and validated with `./scripts/check-orbstack.sh`
+- OrbStack is installed and validated with `./scripts/check-orbstack.fish`
 - `compose/.env` exists and is based on `compose/.env.example`
 - `JELLYFIN_MEDIA_PATH` points to a real readable media directory
 - storage choice is documented in `docs/media-storage.md`
@@ -19,8 +19,8 @@ JELLYFIN_HTTPS_PORT=8920
 
 ## Deploy
 Run:
-```bash
-./scripts/deploy-jellyfin.sh
+```fish
+./scripts/deploy-jellyfin.fish
 ```
 
 ## Initial setup
@@ -33,8 +33,8 @@ Run:
 
 ## Validate
 Run:
-```bash
-./scripts/check-jellyfin.sh
+```fish
+./scripts/check-jellyfin.fish
 ```
 
 Then confirm manually:
@@ -45,7 +45,7 @@ Then confirm manually:
 
 ## Rollback
 - stop or remove the service:
-  ```bash
+  ```fish
   docker compose --env-file compose/.env -f compose/docker-compose.yml stop jellyfin
   docker compose --env-file compose/.env -f compose/docker-compose.yml rm -f jellyfin
   ```
@@ -57,5 +57,5 @@ Then confirm manually:
 - `compose/.env.example`
 - `docs/media-storage.md`
 - `docs/jellyfin.md`
-- `scripts/deploy-jellyfin.sh`
-- `scripts/check-jellyfin.sh`
+- `scripts/deploy-jellyfin.fish`
+- `scripts/check-jellyfin.fish`

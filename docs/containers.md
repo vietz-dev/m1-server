@@ -51,8 +51,8 @@ Back up or otherwise account for:
 
 ## Validation
 Use:
-```bash
-./scripts/check-orbstack.sh
+```fish
+./scripts/check-orbstack.fish
 ```
 
 Expected high-level signals:
@@ -62,7 +62,7 @@ Expected high-level signals:
 - compose file validates
 
 And when Docker is available:
-```bash
+```fish
 docker compose -f compose/docker-compose.yml config
 ```
 
@@ -70,4 +70,4 @@ docker compose -f compose/docker-compose.yml config
 - `compose/docker-compose.yml`
 - `compose/.env.example`
 - `runbooks/orbstack-first-launch.md`
-- `scripts/check-orbstack.sh`
+- `scripts/check-orbstack.fish`

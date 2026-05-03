@@ -2,13 +2,13 @@
 
 ## Recommended cadence
 ### Weekly or after major changes
-- run `./scripts/status-all.sh`
-- check free disk with `./scripts/check-disk.sh`
+- run `./scripts/status-all.fish`
+- check free disk with `./scripts/check-disk.fish`
 - confirm key services are still reachable
 
 ### Monthly
-- run `./scripts/update-all.sh`
-- re-run `./scripts/check-homebrew.sh`
+- run `./scripts/update-all.fish`
+- re-run `./scripts/check-homebrew.fish`
 - review installed Ollama models and disk usage
 - confirm external media mounts still behave as expected after reboot/login
 
@@ -21,13 +21,13 @@
 ## Standard maintenance workflow
 1. Ensure you have a current backup or rollback plan.
 2. Run:
-   ```bash
-   ./scripts/update-all.sh
+   ```fish
+   ./scripts/update-all.fish
    ```
 3. Review failures or warnings.
 4. Validate the stack with:
-   ```bash
-   ./scripts/status-all.sh
+   ```fish
+   ./scripts/status-all.fish
    ```
 5. If needed, follow the matching recovery runbook.
 

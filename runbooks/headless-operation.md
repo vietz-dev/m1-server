@@ -14,13 +14,13 @@ Validate that the MacBook Air M1 remains usable as a headless server with its br
 ### 1. Baseline access
 1. Boot the Mac normally.
 2. Confirm you can SSH in from another machine:
-   ```bash
+   ```fish
    ssh justin@macbook-air.local
    ```
 3. Run:
-   ```bash
-   ./scripts/check-remote-access.sh
-   ./scripts/check-pmset.sh
+   ```fish
+   ./scripts/check-remote-access.fish
+   ./scripts/check-pmset.fish
    ```
 
 ### 2. Dummy display validation

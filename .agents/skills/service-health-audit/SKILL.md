@@ -17,8 +17,8 @@ Use this skill for health checks and operational audits across the stack.
 - brew services / launchd state
 
 ## Preferred sources
-- existing `scripts/check-*.sh`
-- `scripts/status-all.sh` when available
+- existing `scripts/check-*.fish`
+- `scripts/status-all.fish` when available
 - compose manifests and env templates
 - service-specific docs in `docs/`
 - recovery runbooks in `runbooks/`

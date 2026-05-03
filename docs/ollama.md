@@ -6,8 +6,8 @@ Run Ollama natively on macOS so the MacBook Air M1 can use Apple Metal accelerat
 ## Installation and service management
 ### Install and start
 Use:
-```bash
-./scripts/install-ollama.sh
+```fish
+./scripts/install-ollama.fish
 ```
 
 This script:
@@ -17,8 +17,8 @@ This script:
 
 ### Validate
 Use:
-```bash
-./scripts/check-ollama.sh
+```fish
+./scripts/check-ollama.fish
 ```
 
 ## Network exposure
@@ -37,7 +37,7 @@ This should be treated as a trusted-LAN-only assumption and revisited in Phase 9
 
 ### Remote validation
 From another LAN machine:
-```bash
+```fish
 curl http://macbook-air.local:11434/api/tags
 ```
 
@@ -50,39 +50,39 @@ Override locally in `config/machine.env` if you want a different set.
 
 ### Pull models
 Use:
-```bash
-./scripts/ollama-pull-models.sh
+```fish
+./scripts/ollama-pull-models.fish
 ```
 
 ### List models
 Use:
-```bash
-./scripts/ollama-list-models.sh
+```fish
+./scripts/ollama-list-models.fish
 ```
 
 ### Disk usage expectations
 Model storage can consume several GB quickly. Re-check available disk before pulling multiple models on a 16GB RAM / laptop-SSD system.
 
 ### Upgrade/removal workflow
-- pull a newer or additional model with `./scripts/ollama-pull-models.sh`
-- inspect installed models with `./scripts/ollama-list-models.sh`
+- pull a newer or additional model with `./scripts/ollama-pull-models.fish`
+- inspect installed models with `./scripts/ollama-list-models.fish`
 - remove a model manually when no longer needed:
-  ```bash
+  ```fish
   ollama rm <model>
   ```
 
 ## Performance and reliability
 ### Smoke test
 Use:
-```bash
-./scripts/ollama-smoke-test.sh
+```fish
+./scripts/ollama-smoke-test.fish
 ```
 
 ### Metal acceleration validation
 Check for:
 - successful inference speed versus obvious CPU fallback behavior
 - Ollama logs referencing Metal / GPU initialization when available
-- absence of obvious startup or memory errors in `./scripts/check-ollama.sh`
+- absence of obvious startup or memory errors in `./scripts/check-ollama.fish`
 
 ### Memory/concurrency notes for 16GB RAM
 - start with one small-to-medium model
@@ -95,9 +95,9 @@ Check for:
 - host-wide sleep, reboot, or login issues can still interrupt service even when Ollama itself is healthy
 
 ## Related files
-- `scripts/install-ollama.sh`
-- `scripts/check-ollama.sh`
-- `scripts/ollama-pull-models.sh`
-- `scripts/ollama-list-models.sh`
-- `scripts/ollama-smoke-test.sh`
+- `scripts/install-ollama.fish`
+- `scripts/check-ollama.fish`
+- `scripts/ollama-pull-models.fish`
+- `scripts/ollama-list-models.fish`
+- `scripts/ollama-smoke-test.fish`
 - `config/machine.env.example`

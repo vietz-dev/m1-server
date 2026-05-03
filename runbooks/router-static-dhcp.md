@@ -23,7 +23,7 @@ Router UI and terminology vary by vendor, so this step is documented instead of 
 
 ## Validate
 From another machine on the LAN:
-```bash
+```fish
 ping macbook-air.local
 ssh justin@macbook-air.local
 ```

@@ -20,9 +20,9 @@ Expected state is documented in:
 - `docs/validation-checklist.md`
 
 Relevant scripts/runbooks:
-- `scripts/check-remote-access.sh`
-- `scripts/check-pmset.sh`
-- `scripts/configure-pmset.sh`
+- `scripts/check-remote-access.fish`
+- `scripts/check-pmset.fish`
+- `scripts/configure-pmset.fish`
 - `runbooks/enable-remote-access.md`
 - `runbooks/enable-auto-login.md`
 - `runbooks/power-management.md`

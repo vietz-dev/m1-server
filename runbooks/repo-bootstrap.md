@@ -12,7 +12,7 @@ Prepare this repository to act as the source of truth for the MacBook Air M1 ser
 
 ## Local operator steps
 1. Copy machine config template when ready:
-```bash
+```fish
 cp config/machine.env.example config/machine.env
 ```
 2. Fill in environment-specific values.

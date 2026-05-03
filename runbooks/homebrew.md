@@ -13,42 +13,43 @@ The Homebrew installer may prompt for admin approval or Xcode Command Line Tools
 
 ## Steps
 1. Install Homebrew:
-   ```bash
-   ./scripts/install-homebrew.sh
+   ```fish
+   ./scripts/install-homebrew.fish
    ```
-2. If the installer says `brew` is not on `PATH` yet, load it for the current shell:
-   ```bash
-   eval "$(/opt/homebrew/bin/brew shellenv)"
+2. If the installer says `brew` is not on `PATH` yet, load it for the current fish shell:
+   ```fish
+   eval (/opt/homebrew/bin/brew shellenv)
    ```
 3. Apply the repo-managed package set:
-   ```bash
-   ./scripts/brew-bundle.sh
+   ```fish
+   ./scripts/brew-bundle.fish
    ```
 4. Validate the result:
-   ```bash
-   ./scripts/check-homebrew.sh
+   ```fish
+   ./scripts/check-homebrew.fish
    ```
 
 ## Expected package set
 Managed by `Brewfile`:
-- core tools: `git`, `jq`, `wget`, `htop`, `ripgrep`, `tmux`
+- core tools: `git`, `jq`, `wget`, `htop`, `ripgrep`, `tmux`, `fish`
 - native runtime: `ollama`
 - container runtime: `orbstack`
 
 ## Rollback
 - remove an installed package:
-  ```bash
+  ```fish
   brew uninstall <formula>
   ```
 - remove a cask:
-  ```bash
+  ```fish
   brew uninstall --cask <name>
   ```
 - if the package should not be part of the baseline, update `Brewfile` and `docs/tooling.md`
 
 ## Related files
 - `Brewfile`
-- `scripts/install-homebrew.sh`
-- `scripts/brew-bundle.sh`
-- `scripts/check-homebrew.sh`
+- `scripts/install-homebrew.fish`
+- `scripts/brew-bundle.fish`
+- `scripts/check-homebrew.fish`
 - `docs/tooling.md`
+- `runbooks/fish-shell.md`

@@ -27,8 +27,8 @@ Define what must be backed up to recover this server with minimal manual reconst
    - `config/machine.env`
 2. Ensure repo contents are backed up.
 3. Capture current model inventory:
-   ```bash
-   ./scripts/ollama-list-models.sh
+   ```fish
+   ./scripts/ollama-list-models.fish
    ```
 4. Back up named volumes for Open WebUI and Jellyfin config.
 5. Back up the media source itself if it is not already protected elsewhere.
@@ -41,8 +41,8 @@ Define what must be backed up to recover this server with minimal manual reconst
 5. Reconnect or restore the media source.
 6. Reinstall or re-pull Ollama models as needed.
 7. Run:
-   ```bash
-   ./scripts/status-all.sh
+   ```fish
+   ./scripts/status-all.fish
    ```
 8. Re-test LAN access to Ollama, Open WebUI, and Jellyfin.
 

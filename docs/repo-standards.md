@@ -12,8 +12,8 @@ Use these prefixes consistently:
 
 ## Script behavior
 Scripts should:
-- use `#!/usr/bin/env bash`
-- use `set -euo pipefail`
+- use `#!/usr/bin/env fish`
+- prefer straightforward fish syntax over dense POSIX shell constructs
 - fail loudly with actionable error messages
 - be safe to rerun when practical
 - avoid destructive changes unless clearly documented

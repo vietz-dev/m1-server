@@ -5,13 +5,13 @@ Restore Jellyfin when the UI is down or the media mount is broken.
 
 ## Steps
 1. Run:
-   ```bash
-   ./scripts/check-jellyfin.sh
+   ```fish
+   ./scripts/check-jellyfin.fish
    ```
 2. Confirm `JELLYFIN_MEDIA_PATH` exists and is readable.
 3. If the container is absent or stopped, redeploy:
-   ```bash
-   ./scripts/deploy-jellyfin.sh
+   ```fish
+   ./scripts/deploy-jellyfin.fish
    ```
 4. Re-check the container and listener.
 5. Open the UI and confirm the library is still present.

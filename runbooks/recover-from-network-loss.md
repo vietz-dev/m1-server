@@ -8,13 +8,13 @@ Restore access when the Mac disappears from the LAN or services stop responding 
 2. If hostname resolution failed, use the reserved IP from `docs/networking.md`.
 3. If SSH is unavailable, try Screen Sharing if enabled.
 4. If you regain shell access, run:
-   ```bash
-   ./scripts/check-remote-access.sh
-   ./scripts/check-ports.sh
+   ```fish
+   ./scripts/check-remote-access.fish
+   ./scripts/check-ports.fish
    ```
 5. Verify the Mac did not sleep unexpectedly:
-   ```bash
-   ./scripts/check-pmset.sh
+   ```fish
+   ./scripts/check-pmset.fish
    ```
 6. Verify router DHCP reservation and current client lease.
 7. If needed, recover locally with lid open / attached monitor and revisit headless settings.

@@ -19,12 +19,12 @@ Enable reliable remote administration of the Mac before switching to headless op
 
 ## Validate
 Run locally:
-```bash
-./scripts/check-remote-access.sh
+```fish
+./scripts/check-remote-access.fish
 ```
 
 From another machine on the LAN:
-```bash
+```fish
 ssh justin@macbook-air.local
 ```
 

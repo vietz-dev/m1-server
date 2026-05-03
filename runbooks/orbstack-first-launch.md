@@ -4,7 +4,7 @@
 Complete the one-time GUI activation and Docker setup required by OrbStack.
 
 ## Prerequisites
-- Homebrew baseline applied with `./scripts/brew-bundle.sh`
+- Homebrew baseline applied with `./scripts/brew-bundle.fish`
 - local GUI access or Screen Sharing fallback
 - auto-login plan understood if OrbStack must recover after reboot
 
@@ -13,8 +13,8 @@ OrbStack requires a desktop-app first launch and may show approvals or onboardin
 
 ## Steps
 1. Install OrbStack via Homebrew if it is not already installed:
-   ```bash
-   ./scripts/brew-bundle.sh
+   ```fish
+   ./scripts/brew-bundle.fish
    ```
 2. Open **OrbStack** from Applications, Spotlight, or Launchpad.
 3. Complete first-launch prompts.
@@ -25,8 +25,8 @@ OrbStack requires a desktop-app first launch and may show approvals or onboardin
 
 ## Validate
 Run:
-```bash
-./scripts/check-orbstack.sh
+```fish
+./scripts/check-orbstack.fish
 ```
 
 Then confirm:
@@ -38,7 +38,7 @@ Then confirm:
 ## Rollback
 - quit OrbStack
 - uninstall if needed:
-  ```bash
+  ```fish
   brew uninstall --cask orbstack
   ```
 - remove or revisit any non-default startup settings you changed during first launch

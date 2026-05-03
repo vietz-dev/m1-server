@@ -28,13 +28,13 @@ The UI secret/config input is managed through:
 
 ## Deployment and checks
 Deploy with:
-```bash
-./scripts/deploy-open-webui.sh
+```fish
+./scripts/deploy-open-webui.fish
 ```
 
 Validate with:
-```bash
-./scripts/check-open-webui.sh
+```fish
+./scripts/check-open-webui.fish
 ```
 
 ## Backup/restore considerations

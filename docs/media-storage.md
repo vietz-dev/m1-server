@@ -39,11 +39,11 @@ Preferred order for this project:
 
 ## Validation
 Before deploy:
-```bash
+```fish
 ls -ld "$JELLYFIN_MEDIA_PATH"
 ```
 
 After deploy:
-```bash
-./scripts/check-jellyfin.sh
+```fish
+./scripts/check-jellyfin.fish
 ```

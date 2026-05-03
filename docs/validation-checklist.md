@@ -14,7 +14,7 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 - [ ] reboot recovery behavior is documented if anything still needs manual intervention
 
 ## Power and headless behavior
-- [ ] `scripts/check-pmset.sh` reports the intended settings
+- [ ] `scripts/check-pmset.fish` reports the intended settings
 - [ ] machine stays awake on power as intended
 - [ ] lid-closed behavior is verified with the dummy display workflow
 - [ ] machine remains reachable over SSH when headless
@@ -26,24 +26,24 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 - [ ] hostname resolves as expected on the LAN
 
 ## Package and runtime foundation
-- [ ] `scripts/check-homebrew.sh` passes once added
-- [ ] `scripts/check-orbstack.sh` reports healthy state
+- [ ] `scripts/check-homebrew.fish` passes once added
+- [ ] `scripts/check-orbstack.fish` reports healthy state
 - [ ] compose stack starts without missing env vars or mount errors
 
 ## Ollama
-- [ ] `scripts/check-ollama.sh` reports the service as reachable
+- [ ] `scripts/check-ollama.fish` reports the service as reachable
 - [ ] remote LAN access to port `11434` works if intentionally exposed
-- [ ] `scripts/ollama-smoke-test.sh` succeeds
+- [ ] `scripts/ollama-smoke-test.fish` succeeds
 - [ ] logs or runtime output indicate Metal acceleration is active
 
 ## Open WebUI
-- [ ] `scripts/check-open-webui.sh` reports healthy container/web status
+- [ ] `scripts/check-open-webui.fish` reports healthy container/web status
 - [ ] web UI loads from another LAN device
 - [ ] login/admin bootstrap is complete
 - [ ] model discovery and inference through Ollama work
 
 ## Jellyfin
-- [ ] `scripts/check-jellyfin.sh` reports healthy container/mount status
+- [ ] `scripts/check-jellyfin.fish` reports healthy container/mount status
 - [ ] web UI loads from another LAN device
 - [ ] media mounts are present and readable
 - [ ] playback succeeds for at least one known-good test file
