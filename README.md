@@ -31,10 +31,11 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - Script conventions and idempotency rules: `docs/repo-standards.md`
 - Machine-specific config template: `config/machine.env.example`
 - Compose config template: `compose/.env.example`
+- Baseline package decisions: `docs/tooling.md`
 
 ## Current focus
 - Base macOS headless setup
-- Homebrew bootstrap
+- Homebrew bootstrap and package validation
 - OrbStack first-launch/runbook
 - Native Ollama
 - Open WebUI + Jellyfin compose stack

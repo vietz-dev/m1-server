@@ -4,6 +4,7 @@ brew "jq"
 brew "wget"
 brew "htop"
 brew "ripgrep"
+brew "tmux"
 
 # Native LLM runtime
 brew "ollama"

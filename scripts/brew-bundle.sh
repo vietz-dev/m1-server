@@ -6,4 +6,8 @@ if ! command -v brew >/dev/null 2>&1; then
   exit 1
 fi
 
-brew bundle --file="$(dirname "$0")/../Brewfile"
+repo_root="$(cd "$(dirname "$0")/.." && pwd)"
+brewfile="${repo_root}/Brewfile"
+
+echo "Applying Brewfile: ${brewfile}"
+brew bundle --file="${brewfile}"
