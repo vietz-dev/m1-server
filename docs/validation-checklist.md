@@ -18,6 +18,12 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 - [ ] machine stays awake on power as intended
 - [ ] lid-closed behavior is verified with the dummy display workflow
 - [ ] machine remains reachable over SSH when headless
+- [ ] reboot without a real monitor is tested and documented
+
+## Networking
+- [ ] router DHCP reservation is configured
+- [ ] `docs/networking.md` records the active interface and reserved IP
+- [ ] hostname resolves as expected on the LAN
 
 ## Package and runtime foundation
 - [ ] `scripts/check-homebrew.sh` passes once added
