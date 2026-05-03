@@ -22,6 +22,16 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - `config/` – config templates and env examples
 - `launchd/` – native service definitions/templates
 
+## Architecture
+- **Native macOS:** Ollama
+- **OrbStack containers:** Open WebUI, Jellyfin
+- **Future:** GitHub Actions runner
+
+## Standards
+- Script conventions and idempotency rules: `docs/repo-standards.md`
+- Machine-specific config template: `config/machine.env.example`
+- Compose config template: `compose/.env.example`
+
 ## Current focus
 - Base macOS headless setup
 - Homebrew bootstrap
