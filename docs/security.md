@@ -41,8 +41,10 @@ Because app prompts and firewall approvals can be GUI-driven, final enforcement 
 - never commit real secrets to git
 - store machine-specific values in local untracked files:
   - `config/machine.env`
+  - `config/newt.env`
   - `compose/.env`
 - replace placeholder values such as `OPEN_WEBUI_SECRET_KEY=change-me`
+- keep Pangolin / Newt credentials only in local config and deployed system files such as `/etc/newt/newt.env`
 
 ## Future review points
 Revisit this doc when:

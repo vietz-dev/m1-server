@@ -1,0 +1,68 @@
+---
+title: Welcome
+description: A beginner-friendly guide for rebuilding this MacBook homelab server from a fresh macOS install.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+# Build this MacBook server from scratch
+
+This documentation explains how to turn a freshly installed Apple Silicon MacBook into the **headless homelab server** described in this repository.
+
+It is written for someone who:
+- has a clean macOS install
+- may not know Homebrew, OrbStack, or Ollama yet
+- wants a practical, ordered guide instead of scattered notes
+
+## What this server becomes
+
+By the end of the documented setup, the Mac should provide:
+- **SSH-based remote administration**
+- **fish** as the preferred interactive shell
+- **Ollama running natively on macOS** for Apple Silicon / Metal support
+- **Open WebUI in OrbStack** as a browser UI for Ollama
+- **Jellyfin in OrbStack** for LAN media playback
+- **repeatable scripts, runbooks, and recovery docs** for day-2 operations
+
+## Runtime split
+
+- **Native on macOS:** Ollama
+- **Containerized in OrbStack:** Open WebUI, Jellyfin
+- **Primary access:** SSH
+- **Optional fallback:** Screen Sharing
+
+<CardGrid>
+  <Card title="Fresh install path" href="/getting-started/fresh-install/">
+    Start here if the Mac has just been reinstalled and you want the full setup order.
+  </Card>
+  <Card title="Bring-up checklist" href="/getting-started/checklist/">
+    Use a concise operator checklist while working through the setup.
+  </Card>
+  <Card title="Runbooks" href="/reference/runbooks/">
+    Find every manual procedure collected from the repo in one place.
+  </Card>
+  <Card title="Scripts" href="/reference/scripts/">
+    See what each fish script does and when to run it.
+  </Card>
+</CardGrid>
+
+## Before you begin
+
+Have these available:
+- the MacBook you want to repurpose
+- power adapter connected
+- another machine on the same LAN for SSH testing
+- local admin access to the Mac
+- dummy display plug if you plan to run fully headless with the internal display unavailable
+- a decision about where your Jellyfin media will live
+
+## Important assumptions
+
+This repo currently assumes:
+- hostname target: `macbook-air`
+- operator account: `justin`
+- LAN-only trusted environment
+- OrbStack for containers instead of Docker Desktop
+- fish for repo scripts and preferred shell usage
+
+If your values differ, adjust the local config files described later in this guide.

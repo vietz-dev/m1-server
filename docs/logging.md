@@ -51,6 +51,17 @@ Power-related clues:
 pmset -g log | tail -n 50
 ```
 
+## Pangolin / Newt logs
+launchd state:
+```fish
+sudo launchctl print system/net.pangolin.newt
+```
+
+file log:
+```fish
+sudo tail -n 100 /var/log/newt.log
+```
+
 ## Recommended workflow
 1. Run `./scripts/status-all.fish`
 2. Inspect the failing service's `check-*` output

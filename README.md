@@ -21,6 +21,7 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - `docs/` – architecture, decisions, troubleshooting
 - `config/` – config templates and env examples
 - `launchd/` – native service definitions/templates
+- `site/` – Astro Starlight documentation site for guided setup and operations
 
 ## Architecture
 - **Native macOS:** Ollama
@@ -42,5 +43,17 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - Open WebUI deployment, admin bootstrap, and validation
 - Jellyfin deployment, media storage planning, and validation
 - Cross-service status, logging, recovery, security, and maintenance runbooks
+- Optional Pangolin / Newt remote-access integration on macOS via launchd
+
+## Documentation site
+
+A beginner-friendly Starlight site lives in `site/`.
+
+Run it locally:
+```fish
+cd site
+npm install
+npm run dev
+```
 
 See `TODO.md` for the full plan.

@@ -36,3 +36,4 @@
 - missing external media paths before Jellyfin restart
 - OrbStack not starting after reboot/login
 - GUI-only approvals changing after app or OS updates
+- third-party remote-access agents such as Newt failing after OS or launchd changes
