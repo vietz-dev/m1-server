@@ -18,7 +18,7 @@ If the stack grows significantly later, split files can be reconsidered.
 ## Persistence strategy
 ### Named volumes
 Use named volumes for app-managed state:
-- `open-webui-data`
+- `open-webui-data` for Open WebUI application data
 - `jellyfin-config`
 - `jellyfin-cache`
 

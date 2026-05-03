@@ -12,3 +12,4 @@ Track important choices here with dates and rationale.
 - Start with a single repo-managed Compose file for OrbStack workloads and named volumes for app state.
 - Run Ollama as a Homebrew-managed native service and target `0.0.0.0:11434` on the trusted home LAN.
 - Start with `gemma3` as the default initial Ollama model set, with local override support in `config/machine.env`.
+- Run Open WebUI in OrbStack on port `3000` by default and connect it to native Ollama via `host.docker.internal`.

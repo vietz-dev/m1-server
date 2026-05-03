@@ -37,7 +37,7 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 - [ ] logs or runtime output indicate Metal acceleration is active
 
 ## Open WebUI
-- [ ] container is running
+- [ ] `scripts/check-open-webui.sh` reports healthy container/web status
 - [ ] web UI loads from another LAN device
 - [ ] login/admin bootstrap is complete
 - [ ] model discovery and inference through Ollama work
