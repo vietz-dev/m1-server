@@ -43,7 +43,7 @@ Use this checklist after setup changes, after reboot testing, and after recovery
 - [ ] model discovery and inference through Ollama work
 
 ## Jellyfin
-- [ ] container is running
+- [ ] `scripts/check-jellyfin.sh` reports healthy container/mount status
 - [ ] web UI loads from another LAN device
 - [ ] media mounts are present and readable
 - [ ] playback succeeds for at least one known-good test file

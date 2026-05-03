@@ -39,6 +39,6 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - OrbStack first-launch/runbook
 - Native Ollama service, model management, and validation
 - Open WebUI deployment, admin bootstrap, and validation
-- Jellyfin compose stack
+- Jellyfin deployment, media storage planning, and validation
 
 See `TODO.md` for the full plan.

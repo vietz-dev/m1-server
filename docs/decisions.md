@@ -13,3 +13,5 @@ Track important choices here with dates and rationale.
 - Run Ollama as a Homebrew-managed native service and target `0.0.0.0:11434` on the trusted home LAN.
 - Start with `gemma3` as the default initial Ollama model set, with local override support in `config/machine.env`.
 - Run Open WebUI in OrbStack on port `3000` by default and connect it to native Ollama via `host.docker.internal`.
+- Run Jellyfin in OrbStack with bridge networking, explicit port mappings, named volumes for config/cache, and a read-only host bind mount for media.
+- Prefer direct play over assuming reliable hardware transcoding on this macOS/OrbStack Apple Silicon setup.

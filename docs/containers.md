@@ -19,8 +19,8 @@ If the stack grows significantly later, split files can be reconsidered.
 ### Named volumes
 Use named volumes for app-managed state:
 - `open-webui-data` for Open WebUI application data
-- `jellyfin-config`
-- `jellyfin-cache`
+- `jellyfin-config` for Jellyfin application config
+- `jellyfin-cache` for Jellyfin cache/transient data
 
 Rationale:
 - simpler initial setup on macOS
