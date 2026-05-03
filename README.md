@@ -1,0 +1,32 @@
+# m1-server
+
+Source of truth for repurposing a headless **MacBook Air M1** into a home server.
+
+## Priorities
+1. Native **Ollama** with Metal acceleration
+2. **Open WebUI** via OrbStack
+3. **Jellyfin** via OrbStack
+4. Operational runbooks and recovery docs
+
+## Principles
+- Automate everything practical
+- Document every manual/macOS GUI step
+- Keep scripts idempotent where possible
+- Treat this repo as rebuild + recovery documentation
+
+## Planned layout
+- `scripts/` – setup, validation, maintenance scripts
+- `runbooks/` – manual/operator procedures
+- `compose/` – container workloads
+- `docs/` – architecture, decisions, troubleshooting
+- `config/` – config templates and env examples
+- `launchd/` – native service definitions/templates
+
+## Current focus
+- Base macOS headless setup
+- Homebrew bootstrap
+- OrbStack first-launch/runbook
+- Native Ollama
+- Open WebUI + Jellyfin compose stack
+
+See `TODO.md` for the full plan.

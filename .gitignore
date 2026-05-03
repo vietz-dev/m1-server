@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+
+# Logs
+*.log
+logs/
+
+# Runtime / temp
+.tmp/
+tmp/
+.cache/
+
+# Generated / local state
+*.local
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Compose overrides
+compose/docker-compose.override.yml
+
+# Service data (if ever vendored locally)
+data/
+
+TODO.md
