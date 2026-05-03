@@ -40,5 +40,6 @@ Source of truth for repurposing a headless **MacBook Air M1** into a home server
 - Native Ollama service, model management, and validation
 - Open WebUI deployment, admin bootstrap, and validation
 - Jellyfin deployment, media storage planning, and validation
+- Cross-service status, logging, and recovery runbooks
 
 See `TODO.md` for the full plan.
