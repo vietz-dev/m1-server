@@ -1,23 +1,47 @@
 # Runbook: OrbStack First Launch
 
 ## Goal
-Complete the one-time GUI activation/setup required by OrbStack.
+Complete the one-time GUI activation and Docker setup required by OrbStack.
+
+## Prerequisites
+- Homebrew baseline applied with `./scripts/brew-bundle.sh`
+- local GUI access or Screen Sharing fallback
+- auto-login plan understood if OrbStack must recover after reboot
+
+## Why this is manual
+OrbStack requires a desktop-app first launch and may show approvals or onboarding prompts.
 
 ## Steps
-1. Install OrbStack via Homebrew:
-```bash
-./scripts/brew-bundle.sh
-```
-2. Open OrbStack from the Applications folder or Spotlight.
-3. Complete any first-launch prompts.
-4. Confirm Docker compatibility is enabled.
-5. Let OrbStack finish initialization.
+1. Install OrbStack via Homebrew if it is not already installed:
+   ```bash
+   ./scripts/brew-bundle.sh
+   ```
+2. Open **OrbStack** from Applications, Spotlight, or Launchpad.
+3. Complete first-launch prompts.
+4. Confirm Docker compatibility/integration is enabled.
+5. Wait for OrbStack to finish initialization.
+6. If prompted for permissions or background behavior, approve the options needed for normal container operation.
+7. Leave OrbStack configured to start the way you intend for reboot recovery, then document any non-default behavior in `docs/containers.md`.
 
 ## Validate
 Run:
 ```bash
 ./scripts/check-orbstack.sh
 ```
+
+Then confirm:
+- `docker daemon: PASS`
+- `docker compose: PASS`
+- `runtime target: PASS (OrbStack context active)`
+- the compose file validates successfully
+
+## Rollback
+- quit OrbStack
+- uninstall if needed:
+  ```bash
+  brew uninstall --cask orbstack
+  ```
+- remove or revisit any non-default startup settings you changed during first launch
 
 ## Important
 Do this before permanent headless operation unless Screen Sharing is already enabled.
